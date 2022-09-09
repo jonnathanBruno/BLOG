@@ -1,0 +1,19 @@
+<h1>PÁGINA PRINCIPAL</h1>
+	<ul>
+		<% @articles.each do |a| %>
+			<li>
+				<%= link_to a.title, a %>
+			</li>
+		<%end%>
+	</u>
+
+	<%= link_to "New Article", new_article_path %>
+
+	<ul>
+		<li>
+			<a href="/noticia">Noticias</a>
+		</li>
+	</u>
+	
+
+
